@@ -1,0 +1,31 @@
+# Build output (all compiler output goes below build/)
+/build/
+/tests/scratch/
+
+# RAD Studio / Delphi IDE artefacts
+__history/
+__recovery/
+*.dcu
+*.dcp
+*.bpl
+*.bpi
+*.exe
+*.map
+*.drc
+*.rsm
+*.tds
+*.local
+*.identcache
+*.dsk
+*.stat
+*.dproj.local
+*.groupproj.local
+*.res
+!/src/**/*.res
+Win32/
+Win64/
+
+# Asset preparation scratch space
+/assets/_downloads/
+/assets/_work/
+!/packages/**/*.res

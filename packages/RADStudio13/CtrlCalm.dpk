@@ -1,0 +1,58 @@
+package CtrlCalm;
+
+{$R *.res}
+{$IFDEF IMPLICITBUILDING This IFDEF should not be used by users}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO OFF}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS OFF}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION ON}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO OFF}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES OFF}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$DEFINE RELEASE}
+{$ENDIF IMPLICITBUILDING}
+{$DESCRIPTION 'Ctrl+Calm - ambient sounds and focus timer'}
+{$LIBSUFFIX AUTO}
+{$DESIGNONLY}
+{$IMPLICITBUILD OFF}
+
+requires
+  rtl,
+  vcl,
+  designide;
+
+contains
+  CtrlCalm.Core.Types in '..\..\src\Core\CtrlCalm.Core.Types.pas',
+  CtrlCalm.Core.Settings in '..\..\src\Core\CtrlCalm.Core.Settings.pas',
+  CtrlCalm.Audio.XAudio2 in '..\..\src\Audio\CtrlCalm.Audio.XAudio2.pas',
+  CtrlCalm.Audio.Wav in '..\..\src\Audio\CtrlCalm.Audio.Wav.pas',
+  CtrlCalm.Audio.Sources in '..\..\src\Audio\CtrlCalm.Audio.Sources.pas',
+  CtrlCalm.Audio.Engine in '..\..\src\Audio\CtrlCalm.Audio.Engine.pas',
+  CtrlCalm.Timer in '..\..\src\Timer\CtrlCalm.Timer.pas',
+  CtrlCalm.Persistence in '..\..\src\Persistence\CtrlCalm.Persistence.pas',
+  CtrlCalm.Threading.Worker in '..\..\src\Threading\CtrlCalm.Threading.Worker.pas',
+  CtrlCalm.Service in '..\..\src\Threading\CtrlCalm.Service.pas',
+  CtrlCalm.UI.Theme in '..\..\src\UI\CtrlCalm.UI.Theme.pas',
+  CtrlCalm.UI.Icons in '..\..\src\UI\CtrlCalm.UI.Icons.pas',
+  CtrlCalm.UI.Controls in '..\..\src\UI\CtrlCalm.UI.Controls.pas',
+  CtrlCalm.UI.TimerPanel in '..\..\src\UI\CtrlCalm.UI.TimerPanel.pas',
+  CtrlCalm.UI.MixerView in '..\..\src\UI\CtrlCalm.UI.MixerView.pas',
+  CtrlCalm.UI.SettingsDialog in '..\..\src\UI\CtrlCalm.UI.SettingsDialog.pas',
+  CtrlCalm.IDE.HostFrame in '..\..\src\IDE\CtrlCalm.IDE.HostFrame.pas' {CalmHostFrame: TFrame},
+  CtrlCalm.IDE.Register in '..\..\src\IDE\CtrlCalm.IDE.Register.pas';
+
+end.

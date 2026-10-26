@@ -1,0 +1,24 @@
+1 VERSIONINFO
+FILEVERSION 1,0,0,0
+PRODUCTVERSION 1,0,0,0
+FILEOS 0x4
+FILETYPE 0x2
+{
+ BLOCK "StringFileInfo"
+ {
+  BLOCK "040904E4"
+  {
+   VALUE "CompanyName", "Ctrl+Calm contributors\000"
+   VALUE "FileDescription", "Ctrl+Calm - ambient sounds and focus timer for RAD Studio\000"
+   VALUE "FileVersion", "1.0.0.0\000"
+   VALUE "InternalName", "CtrlCalm\000"
+   VALUE "LegalCopyright", "Copyright (c) 2026 Ctrl+Calm contributors. MIT License.\000"
+   VALUE "ProductName", "Ctrl+Calm\000"
+   VALUE "ProductVersion", "1.0.0\000"
+  }
+ }
+ BLOCK "VarFileInfo"
+ {
+  VALUE "Translation", 0x0409, 1252
+ }
+}
