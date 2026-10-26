@@ -11,9 +11,9 @@ Thanks for helping. A few rules keep Ctrl+Calm safe to run inside everyone's IDE
   initialization. Read [docs/THREADING.md](docs/THREADING.md) before touching the worker.
 - Do not invent API declarations. New Windows bindings must be translated from the SDK
   headers and cite them; new ToolsAPI use must exist in every supported IDE version.
-- Sounds must be CC0 or properly attributed CC BY with verifiable provenance. Add them via
-  `scripts/package/prepare_sounds.py` so `manifest.json`, `ATTRIBUTION.md` and
-  `LICENSES.md` stay accurate. Never add audio from a source with unclear rights.
+- Sounds must be CC0 or properly attributed CC BY with verifiable provenance. Record each new
+  sound's source, license, processing and checksum in `assets/sounds/manifest.json`,
+  `assets/ATTRIBUTION.md` and `assets/LICENSES.md`. Never add audio from a source with unclear rights.
 
 ## Workflow
 

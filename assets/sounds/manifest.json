@@ -1,7 +1,6 @@
 {
   "schema": "ctrlcalm-sound-manifest/1",
   "generated": "2026-10-09",
-  "generator": "scripts/package/prepare_sounds.py",
   "sounds": [
     {
       "id": "rain",

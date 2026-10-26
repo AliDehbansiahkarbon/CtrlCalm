@@ -5,7 +5,7 @@
 - Windows 10 or 11, which provide XAudio2 2.9 as a system component.
 - RAD Studio 13 Florence, 64-bit and/or 32-bit IDE. This is the version tested; see
   "Other versions" below.
-- No other software at runtime. Python 3 is only needed to re-generate the sound assets.
+- No other software is needed.
 
 ## Install (recommended: script)
 

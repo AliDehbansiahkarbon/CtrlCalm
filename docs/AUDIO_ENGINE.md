@@ -91,13 +91,12 @@ A one-pole DC blocker removes any offset; levels are calibrated to -20 dBFS RMS,
 target as the recorded loops (peaks 0.18–0.45, no clipping). Two minutes of brown noise
 show no drift (`Audio.Noise.BrownNoiseHasNoLongTermDrift`).
 
-## Asset preparation (build time only)
+## Asset preparation
 
-`scripts/package/prepare_sounds.py` (Python standard library) converts the original
-recordings to the bundled loops: 60 s segment starting 8 % into the recording, gain toward
+The bundled loops were prepared offline from the original recordings: 60 s segment starting 8 % into the recording, gain toward
 -20 dBFS RMS, a 5 ms look-ahead peak limiter at -1 dBFS (at most 12 dB, 16 dB for Water and
 20 dB for Fireplace, which are sparse and impulsive), TPDF dither to 16 bit. Details and
-checksums per file are in `assets/sounds/manifest.json`. End users never need Python.
+checksums per file are in `assets/sounds/manifest.json`.
 
 ## Failure handling
 
